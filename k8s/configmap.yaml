@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: website-content
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Argo CD Demo</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="card">
+        <h1>🚀 Argo CD is Working!</h1>
+        <p>This website is deployed using GitOps.</p>
+      </div>
+    </body>
+    </html>
+
+  style.css: |
+    body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
