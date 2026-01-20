@@ -4,7 +4,7 @@ metadata:
   name: website-service
 spec:
   selector:
-    app: website-1
+    app: website
   ports:
     - port: 80
       targetPort: 80
